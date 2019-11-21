@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="head.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/5ab5da5bd2.js" crossorigin="anonymous"></script>
+    <title>hello</title>
+</head>
+<body>
+    <div class="header">
+        <div class="overlay">
+            <ul class="ul-header">
+                <li class="ul1 img1"></li>
+                <li class="ul1 searchText"><input class="search" type="text" placeholder="Nhập tên bài hát, ca sĩ hoặc mv..."/></li>
+                <li class="ul1 userBar">
+                    <div class="div-icon">
+                        <a class="a-icon-user" href="#"><i class="fas fa-user"></i></a>
+                        <a class="a-user" href="#">Đăng Nhập</a>
+                    </div>
+
+                    <button id="btn-changeColor" class="btn-color" onclick="clickChangeColor()"><i class="fas fa-angle-down"></i></button>
+                    <div class="div-user" id="div-color">
+                        <a href="#">
+                            <ul class="ul-changeColor">
+                                <li>Nền tối</li>
+                            </ul> 
+                        </a>                  
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="overlay1">
+            <ul class="ul-menu">
+                <li class="menu item-1"><a href="#">TRANG CHỦ</a></li>
+                <li class="menu item-2">
+                    <a class="a-menu-zingchart" href="#">#ZINGCHART</a>
+                    <div class="menu-zingchart">
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">#ZINGCHART
+                                <li><a href="#">Bài Hát</a></li>
+                                <li class="li-submenu"><a href="#">MV</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">TUẦN
+                                <li><a href="#">Bài Hát</a></li>
+                                <li class="li-submenu"><a href="#">MV</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">US-UK CHART
+                                <li><a href="#">Bài Hát</a></li>
+                                <li class="li-submenu"><a href="#">MV</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">KPOP CHART
+                                <li><a href="#">Bài Hát</a></li>
+                                <li class="li-submenu"><a href="#">MV</a></li>
+                            </ul>
+                        </div>
+                    </div>                                      
+                </li>
+                
+                <li class="menu item-3">
+                    <a class="a-menu-top100" href="#">TOP 100</a>
+                    <div class="menu-top100">
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">VIỆT NAM
+                                <li><a href="#">Nhạc Trẻ</a></li>
+                                <li class="li-submenu"><a href="#">Nhạc Trữ Tình</a></li>
+                                <li class="li-submenu"><a href="#">Quê Hương</a></li>
+                                <li class="li-submenu"><a href="#">Nhạc Cách Mạng</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">ÂU MỸ
+                                <li><a href="#">Pop</a></li>
+                                <li class="li-submenu"><a href="#">Rock</a></li>
+                                <li class="li-submenu"><a href="#">Rap/ Hip Hop</a></li>
+                                <li class="li-submenu"><a href="#">Country</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">CHÂU Á
+                                <li><a href="#">Hàn Quốc</a></li>
+                                <li class="li-submenu"><a href="#">Nhật Bản</a></li>
+                                <li class="li-submenu"><a href="#">Hoa Ngữ</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="sub-menu">
+                            <ul class="ul-submenu">HÒA TẤU
+                                <li><a href="#">Classical</a></li>
+                                <li class="li-submenu"><a href="#">Piano</a></li>
+                                <li class="li-submenu"><a href="#">guitar</a></li>
+                                <li class="li-submenu"><a href="#">Violin</a></li>
+                            </ul>
+                        </div>
+                    </div>       
+                </li>
+                <li class="menu item-4"><a href="#">CHỦ ĐỀ</a></li>
+                <li class="menu item-5"><a href="#">NHẠC CÁ NHÂN</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+<script>
+    function clickChangeColor(){
+        var x = document.getElementById("div-color");
+        if(x.style.display === "block"){           
+            x.style.display = "none";
+        }
+
+        else{       
+            x.style.display ="block";   
+        }
+    }
+</script>
+</html>
