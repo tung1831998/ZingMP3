@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color:#EEE;
+    height:150px;
+}
+
+.img1{
+    width:15%;
+    height:80%;
+    background:url('./zing.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.ul1{
+    margin-right:5%;
+}
+.overlay{
+    width:70%;
+    height:70%;
+    position: relative;
+    left:15%;
+    right:15%;
+}
+
+.ul-header{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.search{
+    width:100%;
+    height:30px;
+}
+.searchText{
+    width:50%;
+}
+
+.userBar{
+    width:30%;
+    display: flex;
+    position: relative;
+}
+
+.div-icon{
+    width:80%;
+}
+
+.a-icon-user{
+    background-color: #AAA;
+    padding:10px;
+    margin-left:10%;
+    border-radius: 50%;
+    width:20px;
+    height:20px;
+    text-align: center;
+}
+
+.a-user{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+
+.btn-color{
+    border:0;
+    background-color:#EEE;
+}
+#div-color{
+    position: absolute;
+    width:100%;
+    left:0;
+    top:200%;
+    display:none;
+}
+
+
+.ul-changeColor {
+    list-style-type: none;
+    position: absolute;
+    left:0;
+    width:70%;
+    top:100%;
+    background-color:#DDD;
+} 
+
+
+/* header menu */
+
+.overlay1{
+    width:70%;
+    height:30%;
+    position: relative;
+    left:15%;
+    right:15%;
+}
+
+.ul-menu{
+    list-style-type: none;
+    display: flex;
+    width:100%;
+    height:100%;
+    padding:0;
+    align-items: flex-end;
+}
+
+.ul-menu li{
+    padding:10px 5px;
+    font-weight: lighter;
+    margin:0px 10px;
+}
+
+.menu a{
+    text-decoration: none;;
+}
+
+.item-2,.item-3,.item-4,.item-5,.item-6,.item-7{
+    position: relative;
+}
+
+.item-2 .menu-zingchart,
+.item-3 .menu-top100,
+.item-4 .menu-chude,
+.item-5 .menu-mv,
+.item-6 .menu-album,
+.item-7 .menu-artist{
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    left:0;
+    top:100%;
+    width:40rem;
+    background-color: rgba(212, 201, 201, 0.2);
+    border: 1px solid #AAA;
+    visibility: hidden;
+}
+
+.menu-artist .sub-menu{
+    width:100%;
+}
+
+.item-7 .menu-artist{
+    width:auto;
+}
+
+.sub-menu ul{
+    list-style-type: none;
+    padding:0;
+    padding-top:10px;
+}
+
+.sub-menu{
+    width:25%;
+}
+
+.ul-submenu li{
+    font-size: 15px;
+    padding-left:0px;
+    padding-top:15px;
+}
+
+.ul-submenu .li-submenu{
+    padding-top: 0px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.item-1 a,
+.a-menu-zingchart,
+.a-menu-top100,
+.a-menu-chude,
+.a-menu-mv,
+.a-menu-album
+.a-menu-artist,
+.item-8 a{
+    padding:10px;
+}
+
+
+
+.item-2:hover .menu-zingchart,
+.item-3:hover .menu-top100,
+.item-4:hover .menu-chude,
+.item-5:hover .menu-mv,
+.item-6:hover .menu-album,
+.item-7:hover .menu-artist
+{
+    visibility: visible;
+
+}
+.item-1:hover a,
+.item-2:hover .a-menu-zingchart,
+.item-3:hover .a-menu-top100,
+.item-4:hover .a-menu-chude,
+.item-5:hover .a-menu-mv,
+.item-6:hover .a-menu-album
+.item-7:hover .a-menu-artist,
+.item-8:hover a
+{
+    border-bottom:5px solid purple;
+}
+
+.ul-submenu li:hover{
+    background-color: #EEE;
+}
+
+
+.item-9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:20px;
+    text-align: center;
+    border-radius: 49%;
+    background: rgb(36,0,33);
+    background: linear-gradient(90deg, rgba(36,0,33,1) 0%, rgba(121,9,102,1) 49%, rgba(255,0,220,1) 100%);
+    position: absolute;
+    top:0;
+    right:5%;
+}
+
+.item-9 a{
+    color:#EEE;
+    font-size:15px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.item-9:hover{
+    opacity: 0.8;
+}
