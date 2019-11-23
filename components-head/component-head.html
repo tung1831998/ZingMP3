@@ -21,13 +21,23 @@
                     </div>
 
                     <button id="btn-changeColor" class="btn-color" onclick="clickChangeColor()"><i class="fas fa-angle-down"></i></button>
-                    <div class="div-user" id="div-color">
-                        <a href="#">
-                            <ul class="ul-changeColor">
-                                <li>Nền tối</li>
-                            </ul> 
-                        </a>                  
-                    </div>
+                
+                        <ul id="ul-id" class="ul-changeColor">
+                            <li class="li-ul-changeColor">
+                                <a id="a1" href="#">
+                                    <div class="div-icon-moon"><i class="fas fa-moon"></i></div>
+                                    <p id="p-color">Nền tối</p>
+                                    <img id="image-switch-off" src="switch-off.png"></img>
+                                </a>
+                            </li>
+                            <hr/> 
+                            <li class="li-ul-changeColor">
+                                <div class="div1-li-ul-changeColor">
+                                    <a class="a-div1-li-ul-changeColor" href="#">Mua VIP ngay</a>
+                                </div>
+                            </li>
+                        </ul>               
+          
                 </li>
             </ul>
         </div>
@@ -288,7 +298,7 @@
 
 <script>
     function clickChangeColor(){
-        var x = document.getElementById("div-color");
+        var x = document.getElementById("ul-id");
         if(x.style.display === "block"){           
             x.style.display = "none";
         }
