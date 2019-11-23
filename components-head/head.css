@@ -49,6 +49,7 @@
     width:30%;
     display: flex;
     position: relative;
+    left:0;
 }
 
 .div-icon{
@@ -75,25 +76,159 @@
     border:0;
     background-color:#EEE;
 }
-#div-color{
+/* #div-color{
     position: absolute;
     width:100%;
     left:0;
     top:200%;
-    display:none;
-}
 
+    z-index:1;
+} */
 
 .ul-changeColor {
     list-style-type: none;
     position: absolute;
-    left:0;
-    width:70%;
-    top:100%;
-    background-color:#DDD;
+    width:100%;
+    height:auto;
+    top:200%;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px #BBB;
+    display:none;
 } 
 
+.ul-changeColor li{
+    flex-grow: 1;
+}
 
+.li-ul-changeColor{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.li-ul-changeColor:hover #a1{
+    background-color: #BBB;
+}
+
+.li-ul-changeColor #a1{
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#a1 p{
+    flex-grow: 1;
+}
+
+.div1-li-ul-changeColor{
+    padding:3%;
+    background-color: yellow;
+    border-radius: 10%;
+    padding:5px  0px;
+}
+.a-div1-li-ul-changeColor{
+    text-decoration: none;
+    font-size:15px;
+    color:#000;
+    padding:5px;
+}
+
+.div1-li-ul-changeColor:hover{
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px #BBB;
+}
+.div1-li-ul-changeColor:hover .a-div1-li-ul-changeColor{
+    color:violet;
+}
+
+/* #a-color{
+    width:100%;
+    height:100%;
+    display: flex;
+    position: relative;
+    left:0;
+}
+
+#a-color .li-ul-changeColor{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin:5px 0px;
+}
+
+
+#a-color:hover .li-ul-changeColor{
+    background-color: #CCC;
+} */
+
+.div-icon-moon{
+    border-radius: 50%;
+    background-color:#DDD;
+    margin-left:5px;
+}
+
+.fa-moon{
+    padding:15px 15px;
+}
+
+#p-color{
+    flex-grow: 1;
+    padding:15px 15px;
+}
+
+#image-switch-off{
+    height:30px;
+    padding:15px 15px;
+}
+
+hr{
+    border: 1px solid #BBB;
+    width:100%;
+}
+
+/* .li1-ul-changeColor .div1-li1-ul-changeColor{
+    width:100%;
+    position: absolute;
+}
+
+.div1-li1-ul-changeColor{
+    width:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-li1-ul-changeColor{ 
+    padding:0;
+    width:100%;
+    color:#000;
+    text-decoration: none;
+}
+
+.div1-li1-ul-changeColor div{
+    background-color: yellow;
+    padding:5px;
+    border-radius: 10%;
+}
+
+.div2-li1-ul-changeColor:hover{
+    box-shadow: 1px 1px 5px #BBB;
+    background-color: #FFF;
+}
+
+.div2-li1-ul-changeColor:hover .a-li1-ul-changeColor{
+    color:violet;
+} */
 /* header menu */
 
 .overlay1{
